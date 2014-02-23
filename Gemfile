@@ -1,4 +1,4 @@
-source 'http://ruby.taobao.org'
+source 'https://rubygems.org'
 
 # It’s also wise to specify the Ruby version we’re using. This is needed for automated deployment scripts such as those used by Heroku.
 ruby '2.1.0'
