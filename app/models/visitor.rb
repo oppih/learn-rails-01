@@ -7,9 +7,9 @@ class Visitor < ActiveRecord::Base
   def subscribe
     mailchimp = Gibbon::API.new
     result = mailchimp.lists.subscribe({
-      :id => ENV['mailchimp_list_id'],
+      :id => ENV['MAILCHIMP_LIST_ID'],
       :email => {:email => self.email},
-      :double_option => false,
+      :double_optin => false,
       :update_existing => true,
       :send_welcome => true
     })
